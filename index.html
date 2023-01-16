@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <script src="https://scorchchamp.github.io/auto-format.js"></script>
+    <div class="app-container">
+        <h1 id="doomsday-name"></h1>
+        <h2 id="doomsday-date"></h1>
+        <h3 id="doomsday-explanation"></h3>
+        <div>
+            <form id="input-form">
+                <p>
+                    <label for="date-input">Enter your birthday:</label>
+                    <input type="datetime-local" id="date-input" name="birthday" required>
+                </p>
+                <p>
+                    <label for="country">Enter your Country:</label>
+                    <select name="country" id="country" required></select>
+                </p>
+
+                <p>
+                    <label for="name-input">Enter your name:</label>
+                    <input type="text" id="name-input" name="name" required></input>
+                </p>
+                <p>
+                    <input type="submit" value="Generate clock!"></input>
+                </p>
+            </form>
+        </div>
+        <div id="output"></div>
+        <script src="./app.js"></script>
+    </div>
+</body>
+
+</html>
